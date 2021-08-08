@@ -209,10 +209,30 @@ input[type=text]{
 .circular-button i{
     font-size: 22px;
 }
+.circular-button .descricao{
+    display: block;
+    position: absolute;
+    right: 0px;
+    margin-right: 50px;
+    background-color: #34364b;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-size: 14px;
+    cursor: auto;
+    display: none;
+    white-space: nowrap;
+}
 .circular-button:hover{
     transform: scale(1.2, 1.2);
     background: rgb(131, 112, 218);
     border: 2px solid rgb(131, 112, 218);
+}
+.circular-button:hover > .descricao{
+    transform: scale(0.87, 0.87);
+    display: inline;
+}
+.circular-button:hover .descricao:hover{
+    display: none;
 }
 .conteudo{
     padding-left: 10px;
