@@ -1,5 +1,5 @@
 :root{
-
+--cor-primaria: rgb(149, 127, 247);
 }
 *{
     margin: 0;
@@ -21,7 +21,7 @@ header{
 }
 header:hover ~ main{
     background: bluea;
-    margin-left: 160px;
+    margin-left: 167px;
     
 }
 nav{
@@ -30,7 +30,7 @@ nav{
 main{
     padding: 1em;
     padding-right: 0;
-    margin-left: calc(70px);
+    margin-left: calc(77px);
     margin-right: calc(70px);
     abackground-color: #f9f9fb;
     transition: ease 200ms;
@@ -72,7 +72,7 @@ input[type=text]{
 }
 #voltar{
     font-size: 1.8em;
-    color: rgb(149, 127, 247);
+    color: var(--cor-primaria);
     display: inline-block;
     margin-top: 20px;
     margin-left: 25px;
@@ -86,7 +86,8 @@ input[type=text]{
     display: flex;
     align-items: center;
     height: 2em;
-    color: rgb(149, 127, 247);
+    color: var(--cor-primaria);
+    afilter: grayscale(100%) opacity(0.7);
     ajustify-content: flex-start;
 }
 .link-menu i{
@@ -99,7 +100,7 @@ input[type=text]{
 }
 
 .menu-lateral:hover{
-    width: 160px;
+    width: 167px;
 }
 .menu-lateral:hover ~ main{
     background: red;
@@ -117,6 +118,9 @@ input[type=text]{
 .menu-lateral:hover .texto-link{
     display: block;
     
+}
+.link-menu:hover{
+    afilter: grayscale(0%) opacity(1);
 }
 .botoes-lateral{
     position: fixed;
@@ -180,9 +184,9 @@ input[type=text]{
 
 .button{
     outline: none;
-    border: 2px solid rgb(149, 127, 247);
+    border: 2px solid var(--cor-primaria);
     padding: 5px 30px;
-    background: rgb(149, 127, 247);
+    background: var(--cor-primaria);
     color: white;
     border-radius: 3px;
     cursor: pointer;
@@ -190,7 +194,7 @@ input[type=text]{
 }
 .circular-button{
     outline: none;
-    border: 2px solid rgb(149, 127, 247);
+    border: 2px solid var(--cor-primaria);
     width: 50px;
     height: 50px;
     display: flex;
@@ -199,7 +203,7 @@ input[type=text]{
     align-content: center;
     border-radius: 50%;
     margin: 20px 10px;
-    background: rgb(149, 127, 247);
+    background: var(--cor-primaria);
     color: white;
     cursor: pointer;
     font-weight: bold;
@@ -245,4 +249,59 @@ input[type=text]{
 }
 .arquivo p{
     
+}
+.progresso-conteudo{
+    background: bluae;
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.progresso-modal{
+    background-color: reda;
+    box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.5);
+    width: 340px;
+    margin-left: -100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #25273c;
+    aborder: 1px solid red;
+    border-radius: 2px;
+}
+.container-descricao{
+    background: white;
+    display: flex;
+    font-family: 'Rajdhani';
+    padding: 5px 0px;
+    padding-top: 18px;
+    baorder: 1px solid red;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.container-descricao p{
+    word-break: break-all;
+
+}
+.circulo{
+    border: 3px solid#25273c;
+    position: relative;
+    top: -5.5px;
+    margin: 5px 12px;
+    border-right: 3px solid var(--cor-primaria);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.progresso-modal .descricao{
+
+}
+.barra-progresso{
+    border-radius: 2px;
+    background: var(--cor-primaria);
+    height: 5px;
+    width: 73%;
+    aborder: 2px solid red;
 }
