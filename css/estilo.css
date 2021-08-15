@@ -19,11 +19,6 @@ header{
     background: yellowa;
     
 }
-header:hover ~ main{
-    background: bluea;
-    margin-left: 167px;
-    
-}
 nav{
 
 }
@@ -98,29 +93,11 @@ input[type=text]{
     font-family: 'Ubuntu';
     font-size: 14px;
 }
-
-.menu-lateral:hover{
-    width: 167px;
-}
-.menu-lateral:hover ~ main{
-    background: red;
-}
 .menu-lateral:hover .lista-link{
     
 }
 .menu-lateral:hover .link-item{
 
-}
-.menu-lateral:hover .link-menu{
-    background: cyana;
-    padding-right: 10px;
-}
-.menu-lateral:hover .texto-link{
-    display: block;
-    
-}
-.link-menu:hover{
-    afilter: grayscale(0%) opacity(1);
 }
 .botoes-lateral{
     position: fixed;
@@ -304,4 +281,28 @@ input[type=text]{
     height: 5px;
     width: 73%;
     aborder: 2px solid red;
+}
+@media screen and (min-width: 600px){
+    header:hover ~ main{
+        background: bluea;
+        margin-left: 167px;
+        
+    }
+    .menu-lateral:hover{
+        width: 167px;
+    }
+    .menu-lateral:hover .link-menu{
+        background: cyana;
+        padding-right: 10px;
+    }
+    .menu-lateral:hover .texto-link{
+        display: block;
+        
+    }
+    .link-menu:hover{
+        afilter: grayscale(0%) opacity(1);
+    }
+    .menu-lateral:hover ~ main{
+        background: red;
+    }
 }
